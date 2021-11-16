@@ -26,25 +26,38 @@ calculate(num c) {
   var k = c + 273;
   return k;
 }*/
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// void main(List<String> args) {
+//   String name = get_month(3);
+//   print('Month: $name');
+// }
+
+// String get_month(int number) {
+//   String month;
+//   switch (number) {
+//     case 1:
+//       month = "January";
+//       break;
+//     case 2:
+//       month = 'February';
+//       break;
+//     case 3:
+//       month = "March";
+//       break;
+//     default:
+//       month = "Not found";
+//   }
+//   return month;
+// }
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Arrow Function
 void main(List<String> args) {
-  String name = get_month(3);
-  print('Month: $name');
+  show("Arrow Function");
+  print("Return: ${GetCity("India")}");
 }
 
-String get_month(int number) {
-  String month;
-  switch (number) {
-    case 1:
-      month = "January";
-      break;
-    case 2:
-      month = 'February';
-      break;
-    case 3:
-      month = "March";
-      break;
-    default:
-      month = "Not found";
-  }
-  return month;
-}
+show(name) => print("Hello: $name");
+
+String GetCity(name) => name;
